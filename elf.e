@@ -4,21 +4,12 @@ note
 	date: "$Date$"
 	revision: "$Revision$"
 
-class
+deferred class
 	ELF
 
 inherit
 	PROCESS
-
-create
-	make
-
-feature
-	make
-		do
-
-		end
-
+	
 feature
 	getHelp
 		do

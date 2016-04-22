@@ -4,20 +4,11 @@ note
 	date: "$Date$"
 	revision: "$Revision$"
 
-class
+deferred class
 	REINDEER
 
 inherit
 	PROCESS
-
-create
-	make
-
-feature
-	make
-		do
-
-		end
 
 feature
 	getHitched

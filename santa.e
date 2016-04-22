@@ -16,57 +16,45 @@ feature
 
 		end
 
-feature
-	sleep
+feature {NONE}
+	wake_up
 		do
 
 		end
 
-feature
-	wake
+feature {REINDEER}
+	reindeer_knock_knock
 		do
-
+			no_reindeer:= no_reindeer + 1
 		end
 
-feature
-	arriveReindeer
+feature {ELF}
+	elf_knock_knock
 		do
-
+			no_waiting_elves := no_waiting_elves + 1
 		end
 
-feature
-	arriveElf
+feature {NONE}
+	prepare_sleigh
 		do
-
+			io.put_string ("Santa is preapering the sleigh...")
 		end
 
-feature
-	areThreeElvesWaiting
+	help_elves
 		do
-
+			io.put_string ("Santa is helping 3 elves...")
 		end
 
-feature
-	areNineReindeerArrived
-		do
+feature {NONE}
+	no_reindeer: INTEGER
+	no_waiting_elves: INTEGER
+	max_serving_elves: INTEGER
+	max_reindeer: INTEGER
+	is_serving_elves: BOOLEAN
 
-		end
-
-feature
-	prepareSleigh
-		do
-
-		end
-
-feature
-	helpElves
-		do
-
-		end
-
-
-feature
-	arrived_reindeer: INTEGER
-	waiting_elves: INTEGER
+invariant
+	no_reindeer >= 0
+	no_reindeer <= max_reindeer
+	no_waiting_elves >= 0
 
 end

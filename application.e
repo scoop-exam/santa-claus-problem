@@ -5,7 +5,7 @@ note
 	revision: "$Revision$"
 
 class
-	SANTA_CLAUS_PROC
+	APPLICATION
 
 create
 	make
