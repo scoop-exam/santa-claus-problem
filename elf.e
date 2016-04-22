@@ -9,7 +9,16 @@ deferred class
 
 inherit
 	PROCESS
-	
+
+feature {NONE}
+	go_to_santa (s: separate SANTA)
+		require
+			not s.is_busy
+		do
+			
+		end
+
+
 feature
 	getHelp
 		do
